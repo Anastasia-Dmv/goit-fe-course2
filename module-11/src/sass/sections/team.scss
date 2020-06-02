@@ -1,0 +1,124 @@
+.team {
+  text-align: center;
+  padding: 100px 0 100px 0;
+
+  &-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    &_item {
+      width: calc((100% - 60px) / 3);
+
+      &-name {
+        font-size: 14px;
+        font-family: $main-font;
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+
+      &-occupation {
+        font-size: 15px;
+        font-family: $secondary-font;
+        color: rgb(153, 153, 153);
+        font-style: italic;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      &-overlay {
+        transition: all 0.2s linear;
+        margin-bottom: 27px;
+      }
+
+      &:hover .team-list_item-overlay {
+        transform: translate(-12px, -12px);
+        box-shadow: 12px 12px 1px rgb(149, 225, 211);
+      }
+
+      &:hover .overlay_gradient {
+        visibility: visible;
+      }
+    }
+  }
+
+  &_title-description {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 90px;
+    font-size: 15px;
+    font-family: $secondary-font;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+  }
+}
+
+
+
+
+/* ========Overlay====== */
+
+.overlay {
+  position: relative;
+
+  &_svg {
+    width: 30px;
+    height: 30px;
+    fill: $secondary-color;
+  }
+
+
+  &_photo {
+    display: block;
+  }
+
+  &_gradient {
+    visibility: hidden;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: -webkit-gradient(linear,
+        left bottom,
+        left top,
+        from(rgba(252, 227, 138, 0.9)),
+        to(rgba(243, 129, 129, 0.9)));
+    background-image: -o-linear-gradient(bottom,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9));
+    background-image: linear-gradient(0deg,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9));
+  }
+
+  &-list_link {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: $third-color;
+    padding-top: 12px;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+
+    &:hover {
+      .overlay_svg {
+        fill: $main-text-color;
+      }
+    }
+
+
+
+  }
+}

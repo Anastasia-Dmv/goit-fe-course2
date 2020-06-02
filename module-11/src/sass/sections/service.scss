@@ -1,0 +1,87 @@
+.service {
+  padding-top: 52px;
+  text-align: center;
+
+  &-list_item {
+    width: 380px;
+    padding-left: 82px;
+    position: relative;
+
+    &:before {
+      display: block;
+      content: " ";
+      position: absolute;
+      left: 0;
+      width: 37px;
+      height: 37px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:first-child:before {
+      background-image: url(../images/alarm.svg);
+    }
+
+    &:first-child:before {
+      background-image: url(../images/alarm.svg);
+    }
+
+    &:nth-child(2):before {
+      background-image: url(../images/graph.svg);
+    }
+
+    &:nth-child(3):before {
+      background-image: url(../images/comp.svg);
+    }
+
+    &:nth-child(4):before {
+      background-image: url(../images/book.svg);
+    }
+
+    &:nth-child(5):before {
+      background-image: url(../images/home.svg);
+    }
+
+    &:nth-child(6):before {
+      background-image: url(../images/mage.svg);
+    }
+
+    &:nth-of-type(-n + 3) {
+      margin-bottom: 50px;
+    }
+
+
+  }
+
+  &-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+}
+
+
+
+.service-list_item-name {
+  font-size: 14px;
+  font-family: $main-font;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.service-list_item-description {
+  font-size: 15px;
+  font-family: $secondary-font;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: left;
+}

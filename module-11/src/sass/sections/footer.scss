@@ -1,0 +1,75 @@
+/*--FOOTER--*/
+.footer-rights {
+  padding-top: 24px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #cccccc;
+
+  &_link {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+}
+
+.footer_text {
+  font-family: $main-font, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(51, 51, 51);
+}
+
+.form {
+  display: flex;
+}
+
+.submit {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(149, 225, 211);
+  color: $main-text-color;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border: none;
+
+  &:hover {
+    background-color: $secondary-color;
+    -webkit-box-shadow: 2px 2px 5px #333333;
+    box-shadow: 2px 2px 5px #333333;
+  }
+}
+
+
+.placeholder {
+  width: 230px;
+  height: 40px;
+  font-weight: 300;
+  font-family: $secondary-font;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+  border: 1px solid #cccccc;
+}
+
+::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+::-moz-placeholder {
+  color: #cccccc;
+}
+
+:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+::placeholder {
+  color: #cccccc;
+}
