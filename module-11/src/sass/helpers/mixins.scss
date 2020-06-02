@@ -1,0 +1,6 @@
+@mixin footer-btn($w, $h, $fw, $fz) {
+  width: $w;
+  height: $h;
+  font-weight: $fw;
+  font-size: $fz;
+}
